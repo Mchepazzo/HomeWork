@@ -7,7 +7,7 @@ public class OutNameOfAnimalsAndInterface {
         Animals fish = new Fish();
         Animals fox = new Fox();
         Animals eagle = new Eagle();
-        System.out.println("Ниже наши объекты будут раскажут как их зовут- для этого задействованы " +
+        System.out.println("Ниже наши объекты будут расказывать как их зовут- для этого задействованы " +
                 "Абстракции. Так же они расскажут что умеют- в плане способности бегать, плавать или летать. " +
                 "Эту споосбность они имеют благодаря Интерфейсам ");
 
