@@ -46,14 +46,11 @@ public class WorkWithFiles {
         System.out.println("Файл " + newFile.getName() + " существует: " + newFile.exists());
 
         System.out.println(" ");
-        System.out.println("==Удаление файла==");
+        System.out.println("==Удаление файлов==");
 
         System.out.println("Файл " + newFile.getName() + " был удалён: " + ": " + newFile.delete());
 
-    }
-
-    private static void file(Path copy_from_1, Path copy_to_1) {
-
-
+        File copyFile = new File("C:/Users/DNS/Downloads/Учёба Java/Занятия/Task15/CopyOfTemp.txt");
+        System.out.println("Файл " + copyFile.getName() + " был удалён: " + ": " + copyFile.delete());
     }
 }
