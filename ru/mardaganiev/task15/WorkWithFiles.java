@@ -2,6 +2,8 @@ package ru.mardaganiev.task15;
 
 
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -18,6 +20,33 @@ public class WorkWithFiles {
             System.out.println("Файл " + file.getName() + " был создан: " + file.createNewFile());
         } catch (IOException e) {
             System.out.println("Не удалось создать файл: " + file.getName() + " : " + e.getMessage());
+        }
+
+        System.out.println(" ");
+        System.out.println("==Запись в файл==");
+
+        try (FileWriter writer = new FileWriter("C:/Users/DNS/Downloads/" +
+                "Учёба Java/Занятия/Task15/temp.txt", false)) {
+            String text = "Запись";
+            writer.write(text);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        System.out.println(" ");
+        System.out.println("==Чтение из файла==");
+
+        try(FileReader reader = new FileReader("C:/Users/DNS/Downloads/Учёба Java/Занятия/Task15/temp.txt"))
+        {
+            int c;
+            while((c=reader.read())!=-1){
+
+                System.out.println((char)c);
+            }
+        }
+        catch(IOException ex){
+
+            System.out.println(ex.getMessage());
         }
 
         System.out.println("Файл " + file.getName() + " существует: " + file.exists());
@@ -42,7 +71,7 @@ public class WorkWithFiles {
         System.out.println("Файл " + file.getName() + " был переименован: " + file.renameTo(file));
         file.renameTo(new File("C:/Users/DNS/Downloads/Учёба Java/Занятия/Task15/temp2.txt"));
 
-        File newFile = new File("temp2.txt");
+        File newFile = new File("C:/Users/DNS/Downloads/Учёба Java/Занятия/Task15/temp2.txt");
         System.out.println("Файл " + newFile.getName() + " существует: " + newFile.exists());
 
         System.out.println(" ");
