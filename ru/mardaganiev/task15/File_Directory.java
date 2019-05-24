@@ -25,7 +25,7 @@ class File_Directory {
         for (int i = 0; i < Indents; i++) System.out.print("\t");
 
         if (Directory.isFile()) System.out.println("В каталоге: " + Directory.getParent() + " находится" +
-                " файл: " + Directory.getName());
+                " файл: " + Directory.getName() + ", размером/длинной: " + Directory.length() + " байт");
         else {
             System.out.println(Directory.getName());
             File[] SubDirectory = Directory.listFiles();
