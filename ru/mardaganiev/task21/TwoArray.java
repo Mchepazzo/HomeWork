@@ -14,13 +14,7 @@ public class TwoArray {
                 "-----------------\n" + Arrays.deepToString(matrix));//применяем метод deepToString класса Arrays
         System.out.println("1.Проход с 1-ой до последней строки (второй способ):\n-----------------------------------" +
                 "-----------------");
-        for (int i = 0; i < 3; i++) {//идём по строкам
-            for (int j = 0; j < 3; j++) {//идём по столбцам
-                System.out.print(matrix[i][j] + "\t");//выводим элементы
-
-            }
-            System.out.println();// вывод пустой строки для визуализации массиваv
-        }
+        outArray(matrix); //применяем метод outArray
         System.out.println("2.Проход с 1-го до предпоследнего элемента:\n-------------------------------------------");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i ].length; j++) {
@@ -28,6 +22,16 @@ public class TwoArray {
                 System.out.printf("%d ", matrix[i][j]);
             }
             System.out.println();
+        }
+    }
+
+    private static void outArray(int[][] matrix) {
+        for (int i = 0; i < 3; i++) {//идём по строкам
+            for (int j = 0; j < 3; j++) {//идём по столбцам
+                System.out.print(matrix[i][j] + "\t");//выводим элементы
+
+            }
+            System.out.println();// вывод пустой строки для визуализации массив
         }
     }
 }
