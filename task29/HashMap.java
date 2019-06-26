@@ -20,11 +20,16 @@ public class HashMap {
     }
 
     public static void removeItemFromMapByValue(Map<String, Person> map, Person value) {
-        Map<String, Person> copy = new HashMap<>(map);
+        Map<String, Person> copy = new java.util.HashMap<>(map);
+
         for (Map.Entry<String, Person> pair : copy.entrySet()) {
-            if (pair.getValue().equals(value))
-                map.remove(pair.getKey());
+            removeItemFromMapByValue(map, value, pair);
         }
+    }
+
+    private static void removeItemFromMapByValue(Map<String, Person> map, Person value, Map.Entry<String, Person> pair) {
+        if (pair.getValue().equals(value))
+            map.remove(pair.getKey());
     }
 
 }
