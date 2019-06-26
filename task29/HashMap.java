@@ -6,7 +6,7 @@ import java.lang.String;
 public class HashMap {
     public static Map<String, Person> createMap() {
         Map<String, Person> book = new java.util.HashMap<>();
-        Person person1 = new Person(29, "Петрова", "");
+        Person person1 = new Person(29, "Петрова", "жен");
         Person person2 = new Person(34, "Сидорова", "жен");
         Person person3 = new Person(34, "Тихонова", "жен");
         Person person4 = new Person(35, "Петров", "муж");
