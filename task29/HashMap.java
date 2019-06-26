@@ -1,5 +1,7 @@
 package ru.mardaganiev.task29;
 
+
+
 import java.util.Map;
 import java.lang.String;
 
@@ -17,6 +19,16 @@ public class HashMap {
         book.put("Key5",person1);
         book.put("Key6",person1);
         return book;
+    }
+
+    public static void removeItemFromMapByValue(Map<String, Person> map, Person value)
+    {
+        Map<String, Person> copy = new HashMap<>(map);
+        for (Map.Entry<String, Person> pair: copy.entrySet())
+        {
+            if (pair.getValue().equals(value))
+                map.remove(pair.getKey());
+        }
     }
 
 }
