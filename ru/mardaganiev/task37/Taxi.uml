@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>39f368d9-f070-446c-b41a-16654b96c8e9.SCHEMA:postgres.public</OriginalElement>
+  <nodes>
+    <node x="774.9193018653417" y="504.01625331592913">39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Клиент</node>
+    <node x="38.10836245736647" y="-27.940123794686098">39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Автомобили</node>
+    <node x="-133.8276348477831" y="269.75927407469794">39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Водители</node>
+    <node x="159.30626552696958" y="488.4772411469957">39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Поездки</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Автомобили" target="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Поездки">
+      <point x="49.25" y="68.5" />
+      <point x="212.25" y="162.0" />
+      <point x="220.0" y="162.0" />
+      <point x="56.25" y="-79.5" />
+    </edge>
+    <edge source="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Поездки" target="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Водители">
+      <point x="-56.25" y="-79.5" />
+      <point x="0.0" y="68.5" />
+    </edge>
+    <edge source="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Клиент" target="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Поездки">
+      <point x="0.0" y="-68.5" />
+      <point x="0.0" y="79.5" />
+    </edge>
+    <edge source="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Водители" target="39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Автомобили">
+      <point x="0.0" y="-68.5" />
+      <point x="106.0" y="162.0" />
+      <point x="113.75" y="162.0" />
+      <point x="-49.25" y="68.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7192307692307692" x="474.0" y="362.0" />
+  <SelectedNodes>
+    <node>39f368d9-f070-446c-b41a-16654b96c8e9.TABLE:postgres.public.Клиент</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
